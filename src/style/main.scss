@@ -1,0 +1,51 @@
+@import 'modules/calendar';
+
+@import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
+
+html {
+  background: #eee;
+}
+
+* {
+  font-family: Google Sans;
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+  height: auto;
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+
+.slide-left-enter-active {
+  transition: all .3s ease;
+}
+.slide-left-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-left-enter, .slide-left-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+  height: auto;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slide-right-enter-active {
+  transition: all .3s ease;
+}
+.slide-right-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-right-enter, .slide-right-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+  height: auto;
+  transform: translateX(-50px);
+  opacity: 0;
+}
